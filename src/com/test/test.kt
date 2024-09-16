@@ -1,5 +1,6 @@
 package com.test
-class User{
+internal class User{
     var name:String="张三"
     var age:Int=20
 }
+

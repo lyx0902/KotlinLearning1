@@ -1,4 +1,7 @@
 import com.test.User//导入User类
+//可见性分类与说明：
+// public：默认的修饰符，表示对所有类可见，internal：表示对同一个模块中的所有类可见，
+// protected：表示对同一个包中的所有类及其子类可见，private：表示对同一个类中的所有类可见
 fun main(){
     var stu=Student("张三",20)//创建对象，仅仅代表对象的引用
     var stu2=Student("李四",30)
