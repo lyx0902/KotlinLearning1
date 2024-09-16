@@ -5,4 +5,8 @@ fun main(){
     student.setName("王刚")
     println(student.getName())
     student.hello()
+    val artStudent = ArtStudent()
+    artStudent.hello()
+    artStudent.hello1()
+    artStudent.study()
 }//Encapsulation, inheritance, polymorphism
