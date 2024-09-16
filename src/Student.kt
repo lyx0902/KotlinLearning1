@@ -15,4 +15,6 @@ class Student(var name: String, var age: Int) {
     constructor():this("",19){
         println("次构造函数123")
     }//次构造函数 constructor关键字
+    operator fun component1()=name
+    operator fun component2()=age
 }
