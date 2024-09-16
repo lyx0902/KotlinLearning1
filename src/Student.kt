@@ -9,5 +9,10 @@
 
 }*/
 class Student(var name: String, var age: Int) {
-
+    constructor(name: String): this(name, 20){
+        println("次构造函数")
+    }//次构造函数 constructor关键字
+    constructor():this("",19){
+        println("次构造函数123")
+    }//次构造函数 constructor关键字
 }
