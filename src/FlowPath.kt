@@ -22,5 +22,21 @@ fun main(){
         2-> println("b=2")
         else-> println("b is neither 1 nor 2")
     }
+    //循环结构
+    //for循环
+    val range:IntRange=1..10 //定义一个范围变量
+    for (i in range){
+        println(i)
+        println("Hello $i")
+    }
+    for(i in range step 2){//步长为2
+        println(i)
+    }
+    for(i in range.reversed()){//倒序
+        println(i)
+    }
+    for(i in 10 downTo 1){//倒序
+        println(i)
+    }
     print("Hello World")
 }
