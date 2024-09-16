@@ -30,6 +30,8 @@ fun main(){
         println("Hello $i")
     }
     for(i in range step 2){//步长为2
+        if(i==5){continue}
+        if(i==9){break}
         println(i)
     }
     for(i in range.reversed()){//倒序
@@ -37,6 +39,13 @@ fun main(){
     }
     for(i in 10 downTo 1){//倒序
         println(i)
+    }
+    //终止或加速循环
+    outer@ for (i in 0..3) {   //在循环语句前，添加 标签@ 来进行标记
+        inner@ for (j in 1..3) {
+            if (i == j) break@outer  //break后紧跟要结束的循环标记，当i == j时终止外层循环
+            println("$i, $j")
+        }
     }
     print("Hello World")
 }
