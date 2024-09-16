@@ -18,6 +18,16 @@ class StudentFast(private var name: String, private var age: Int) {//权限控�
     fun hello() {
         println("Hello, I am $name, $age years old.")
     }
+    override fun equals(other: Any?): Boolean {
+        if(this === other) return true  //如果引用的是同一个对象，肯定是true不多逼逼
+        if(other !is StudentFast) return false //如果要判断的对象根本不是Student类型的，那也不用继续了
+        if(name != other.name) return false  //判断名字是否相同
+        if(age != other.age) return false  //判断年龄是否相同
+        return true   //都没问题，那就是相等了
+    }
+    override fun toString(): String {  //直接重写toString函数
+        return "Student(name='$name', age=$age)"
+    }
 }
 open class Student1{
     var name:String ="小明"//加open表示可以被继承
