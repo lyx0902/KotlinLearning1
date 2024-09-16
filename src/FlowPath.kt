@@ -47,5 +47,6 @@ fun main(){
             println("$i, $j")
         }
     }
+    //while循环 do-while与java语法相同
     print("Hello World")
 }
