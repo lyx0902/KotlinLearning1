@@ -1,3 +1,4 @@
+import com.test.User//导入User类
 fun main(){
     var stu=Student("张三",20)//创建对象，仅仅代表对象的引用
     var stu2=Student("李四",30)
@@ -14,6 +15,7 @@ fun main(){
     println(stu.age)
     val person=Person("张三")
     person.hello()
+    println("User.name:${User().name}")
 }
 class Person constructor(val name:String){
     /*constructor(name:String,age:Int):this(name+age){
